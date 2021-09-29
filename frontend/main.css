@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap');
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    hyphens: auto;
+    background: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+.header {
+    height: 20vh;
+}
+
+.header-elems {
+    position: relative;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-left, .header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+
+.header-left {
+    width: 60%;
+}
+
+.header-right {
+    width: 40%;
+    float: right;
+}
+
+.header-title {
+    font-size: 1.5em;
+    color: grey;
+}
+
+.header-description {
+    font-size: 1em;
+    color: silver;
+}
+
+.header-howto {
+    color: grey;
+    font-size: 0.8rem;
+    border-color: black;
+    border-style: dashed;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gh-logo {
+    margin-left: 0.5rem;
+    height: 20px;
+}
+
+.main {
+    height: 80vh;
+    position: relative;
+}
+
+#map-container {
+    height: 90%;
+    width: 90%;
+    margin: 0 auto auto auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.ctrls-topright {
+    z-index: 1001;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ctrl-topright {
+    margin-left: 10px;
+}
+  
+.control {
+    padding: 6px 8px;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: none;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+#refresh-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.loading-overlay {
+    z-index: 5000;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading {
+    opacity: 0.6;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 5rem;
+}
