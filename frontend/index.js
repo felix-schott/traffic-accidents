@@ -176,7 +176,7 @@ const app = {
 
 window.onload = () => { 
     if (window.matchMedia('(max-width: 600px)').matches) {
-        location = "/error.html"
+        location = "error.html"
     } else {
         app.run()
     }
