@@ -1,6 +1,6 @@
 # Overview
 
-This is a simple Flask app with a HTML/JS/CSS + Leaflet.js frontend. The app displays the number of traffic accidents per district in Berlin in 2019 relative to area. Users can sample n % of districts and let a pretrained [Regression-Kriging](https://en.wikipedia.org/wiki/Regression-kriging) model predict the values for the missing districts. The demo can be accessed [here](https://felixschott.net/traffic-accidents).
+This is a simple Flask app with a HTML/JS/CSS + Leaflet.js frontend. The app displays the number of traffic accidents per district in Berlin in 2019 relative to area. Users can sample n % of districts and let a pretrained [Regression-Kriging](https://en.wikipedia.org/wiki/Regression-kriging) model predict the values for the missing districts based on daily traffic volume. The demo can be accessed [here](https://felixschott.net/traffic-accidents).
 
 The folder `backend` contains all python scripts, including the notebooks `cleaning1` and `cleaning2` that contain all the data preparation work. Data sources are listed in the readme file in the `data` directory. `train_model` contains the actual model. `app` sets up the API and runs a local development server (the demo is deployed on a linux server using nginx/gunicorn/pm2).
 
