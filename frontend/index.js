@@ -19,7 +19,7 @@ const app = {
 
     // CONSTANTS
     colorGradient: ['#ffffcc', '#ffeda0', '#fed976', '#feb24c', '#fd8d3c', '#fc4e2a', '#e31a1c', '#bd0026', '#800026'],
-    grades: grades = [0, 5, 10, 15, 20, 25, 30, 35, 40],
+    grades: [0, 5, 10, 15, 20, 25, 30, 35, 40],
 
     // DRIVER FUNCTION
     run() {
